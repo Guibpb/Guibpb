@@ -1,12 +1,13 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
-        vector <int> notval;
+        /*vector <int> notval;
 
         for(int num : nums){
             if(num != val)
@@ -15,7 +16,18 @@ public:
 
         nums.swap(notval);
 
-        return nums.size();
+        return nums.size();*/
+
+        int l = nums.size();
+        
+        for(int i = 0; i < nums.size(); i++){
+            if( nums[i] == val ){
+                nums[i] = 51;
+                l--;
+            }
+        }
+        sort(nums.begin(),nums.end());
+        return l;
     }
 };
 
@@ -41,8 +53,8 @@ int main(){
 
     solution.removeElement(nums, val);
 
-    for(int num: nums)
-        cout << num << " ";
+    for(int num2 : nums)
+        cout << num2 << " ";
 
     cout << "\n\n";
 

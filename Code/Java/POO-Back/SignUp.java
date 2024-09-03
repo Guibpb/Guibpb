@@ -19,7 +19,7 @@ public class SignUp {
 
                 System.out.print("Insira sua senha: ");
                 senha = scanf.nextLine();
-                System.out.println("Confirme a senha: ");
+                System.out.print("Confirme a senha: ");
                 senha2 = scanf.nextLine();
             }while(compararUsuarios() == false);
         }
@@ -29,7 +29,7 @@ public class SignUp {
     }
 
     private static boolean compararUsuarios() throws FileNotFoundException{
-        File arquivo = new File("POO-Back/Banco.csv");
+        File arquivo = new File("Banco.csv");
         boolean compararUsuarios = true;
 
         try(Scanner scanArquivo = new Scanner(arquivo)){
@@ -61,9 +61,14 @@ public class SignUp {
                     System.out.println("Formato de senha inválida.");
                     compararUsuarios = false;
                 }
-
-                if(senha.equals(senha2)){
+                
+                if(!senha.equals(senha2)){
                     System.out.println("Senhas incompatíveis.");
+                    compararUsuarios = false;
+                }
+
+                if(senha.equals(usuarioInfo[2])){
+                    System.out.println("Erro. O usuário " + usuarioInfo[0] + " já está cadastrado com essa senha.");
                     compararUsuarios = false;
                 }
             }

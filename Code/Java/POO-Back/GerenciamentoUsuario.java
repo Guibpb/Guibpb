@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class GerenciamentoUsuario {
     public static void main(String[] args) throws FileNotFoundException{
         //RecordUsuario.escreverArq(string exemplo); //realiza o arquivamento de dados no arquivo do Banco em csv (lembrar de dividr com virgula)
-        //SignIn.receberInput(); //realiza o login do usuario, verifica se condiz com o arquivo
-        SignUp.signUp();
+        SignIn.receberInput(); //realiza o login do usuario, verifica se condiz com o arquivo
+        //SignUp.signUp();
         //verUsuarios();
     }
 
     private static void verUsuarios() throws FileNotFoundException{//feature de adm
-        File arquivo = new File("POO-Back/Banco.csv");
+        File arquivo = new File("Banco.csv");
 
         try(Scanner scanArquivo = new Scanner(arquivo)){
             String firstlineuseless = scanArquivo.nextLine();
