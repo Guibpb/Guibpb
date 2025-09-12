@@ -1,5 +1,11 @@
 ## Hi there 👋
 
+<div style="width: 200px;">
+<a href="https://github.com/Guibpb/github-readme-stats">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Guibpb&langs_count=8" alt="Top Langs" />
+</a>
+</div>
+
 <!--
 **Guibpb/Guibpb** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
