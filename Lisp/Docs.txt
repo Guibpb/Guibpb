@@ -1,0 +1,86 @@
+Defun:
+(defun nome-da-funcao (param1 param2 ...)
+  ;; corpo da função
+  resultado)
+
+(defun soma (a b)
+  (+ a b))
+
+
+If:
+(if condição
+    expressão-se-verdadeiro
+    expressão-se-falso)  ;; opcional
+
+(if (> x 0)
+    (print "positivo")
+    (print "não positivo"))
+
+
+Cond:
+(cond
+  (condição1 expressão1)
+  (condição2 expressão2)
+  (t expressão-default))  ;; t é o "else"
+
+(cond
+  ((> x 0) 'positivo)
+  ((< x 0) 'negativo)
+  (t 'zero))
+
+
+Let:
+(let ((var1 val1)
+      (var2 val2))
+  corpo)
+
+(let ((x 2)
+      (y 3))
+  (+ x y))  ;; retorna 5
+
+
+Let*:
+(let* ((var1 val1)
+       (var2 val2-que-pode-usar-var1))
+  corpo)
+
+(let* ((x 2)
+       (y (+ x 3)))
+  (* x y))  ;; 2 * 5 = 10
+
+
+Mapcar:
+(mapcar #'funcao lista)
+
+(mapcar #'1+ '(1 2 3))  ;; => (2 3 4)
+
+
+Apply:
+(apply #'funcao lista-de-argumentos)
+
+(apply #'+ '(1 2 3 4))  ;; => 10
+
+
+Block:
+(block nome-do-bloco
+  corpo)
+
+(block meu-bloco
+  (return-from meu-bloco "Saiu cedo")
+  "Isso não será executado")
+
+
+Unless:
+(unless condição
+  corpo)
+
+(unless (evenp x)
+  (print "x é ímpar"))
+
+
+When:
+(when condição
+  corpo)
+
+(when (> x 0)
+  (print "x é positivo"))

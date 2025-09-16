@@ -1,0 +1,11 @@
+(defun my-member (E L)
+    (block bloco
+        (if (null L)
+            (return-from bloco nil)
+            (when (equal E (car L))
+                (return-from bloco t)
+                (my-member E (cdr L))
+            )
+        )
+    )
+)

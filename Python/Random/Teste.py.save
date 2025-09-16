@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Criando um gráfico de linha
+plt.figure(figsize=(10, 6))
+
+x1 = [1000, 2500, 5000, 10000, 50000]
+InsertionCrescenteComp = [998, 2498, 4998, 9998, 49998]
+InsertionCrescenteMov = [2994, 7949, 14994, 29994, 1499994]
+
+# Adicionando título e rótulos aos eixos
+plt.title('Número de Comparações/Movimentações/Tempo de Insertion Sort Crescente/Decrescente/Aleatório')
+plt.xlabel('Grandeza do Vetor')
+plt.ylabel('Quantidade de Comparações/Movimentações/Tempo')
+
+# Exibindo a legenda
+plt.legend()
+
+# Salvando o gráfico em um arquivo de imagem
+plt.savefig('grafico_comp_crescente.png')

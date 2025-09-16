@@ -1,0 +1,67 @@
+import matplotlib.pyplot as plt
+import numpy as np  # Para manipulação de posições no eixo x
+
+# Dados
+x1 = [1000, 2500, 5000, 10000, 50000]
+
+Insertion = [998, 2498, 4998, 9998, 49998]
+BinaryInsertion = [7978, 23406, 51810, 113618, 684466]
+Selection = [498501, 3121251, 12492501, 49985001, 1249925001]
+Bubble = [498501, 3121251, 12492501, 49985001, 1249925001]
+Heap = [20386, 58054, 126830, 723858, 1596578]
+Merge = [17624, 13646, 29797, 64600, 382503]
+Quick = [9000, 26356, 57712, 125424, 750000]
+
+# Definindo a largura das barras
+bar_width = 0.1
+
+# Calculando os deslocamentos para as barras
+index = np.arange(len(x1))  # Posições no eixo X para os valores
+
+# Criando o gráfico de barras
+plt.bar(index - 2 * bar_width, Insertion, width=bar_width, label="Inserção")
+plt.bar(index - bar_width, BinaryInsertion, width=bar_width, label="Inserção Binária")
+plt.bar(index, Selection, width=bar_width, label="Seleção")
+plt.bar(index + bar_width, Bubble, width=bar_width, label="Bolha")
+plt.bar(index + 2 * bar_width, Heap, width=bar_width, label="Heap")
+plt.bar(index + 3 * bar_width, Merge, width=bar_width, label="Fusão")
+plt.bar(index + 4 * bar_width, Quick, width=bar_width, label="QuickSort")
+
+# Ajustando os eixos e o título
+plt.title('Número de Comparações Para Vetores em Ordem Crescente')
+plt.xlabel('Grandeza do Vetor')
+plt.ylabel('Quantidade de Comparações')
+plt.xticks(index, x1)  # Ajustando os rótulos do eixo x para os valores de x1
+
+# Exibindo a legenda
+plt.legend()
+
+# Salvando o gráfico em um arquivo de imagem
+plt.savefig('grafico_comp_crescente.png')
+
+# Exibindo o gráfico
+plt.show()
+import matplotlib.pyplot as plt
+# Criando um gráfico de linha
+plt.figure(figsize=(10, 6))
+
+x1 = [1000, 2500, 5000, 10000, 50000]
+
+Insertion = [998, 2498, 4998, 9998, 49998]
+BinaryInsertion = [7978, 23406, 51810, 113618, 684466]
+Selection = [498501, 3121251, 12492501, 49985001, 1249925001]
+Bubble = [498501, 3121251, 12492501, 49985001, 1249925001]
+Heap = [20386, 58054, 126830, 723858, 1596578]
+Merge = [17624, 13646, 29797, 64600, 382503]
+Quick = [9000, 26356, 57712, 125424, 750000]
+
+plt.bar(x1, Insertion, label = "Inserção")
+plt.bar(x1, Insertion, label = "Inserção Binária")
+plt.bar(x1,Selection, label = "Seleção")
+plt.bar(x1,Bubble, label = "Bolha")
+plt.bar(x1,Heap, label = "Heap")
+plt.bar(x1,Merge, label = "Fusão")
+plt.bar(x1,Quick, label = "QuickSort")
+
+# Adicionando título e rótulos aos eixos
+plt.t

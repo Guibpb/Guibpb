@@ -1,0 +1,7 @@
+(defun soma (n)
+    (let ((sum 0))
+        (dotimes (i n sum)
+            (setf sum (+ sum i))
+        )
+    )
+)

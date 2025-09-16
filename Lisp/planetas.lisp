@@ -1,0 +1,13 @@
+(setf Mercurio 36)
+(setf Venus 67)
+(setf Terra 93)
+(setf Marte 141)
+(setf Jupiter 484)
+(setf Saturno 886)
+(setf Urano 1790)
+(setf Netuno 2800)
+(setf Plutao 4600)
+
+(defun distancia(A B)
+    (abs(- A B))
+)

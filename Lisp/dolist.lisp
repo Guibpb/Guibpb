@@ -1,0 +1,6 @@
+(defun imprimir ()
+    (format t "Lista: ")
+    (dolist (item '(1 2 3 4))
+        (format t "~A " item)
+    )
+)

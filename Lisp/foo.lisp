@@ -1,0 +1,6 @@
+(let ((foo ''a))
+(print foo)
+(print 'foo)
+(print (car foo))
+(print (cdr foo))
+)
