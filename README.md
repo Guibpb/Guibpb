@@ -1,5 +1,5 @@
-## Olá!
-# Estou cursando o 4º período de ciência da computação na Universidade de São Paulo - Campus de Ribeirão Preto.
+# Olá!
+## Estou cursando o 4º período de ciência da computação na Universidade de São Paulo - Campus de Ribeirão Preto.
 
 <div>
 <a href="https://github.com/Guibpb">
