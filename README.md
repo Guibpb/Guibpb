@@ -1,5 +1,9 @@
-# Olá!
-## Estou cursando o 4º período de ciência da computação na Universidade de São Paulo.
+# Hello!
+## I'm currently studying Computer Science at University Of São Paulo - Brasil (USP).
+My interest areas are:
+  - Operational Systems
+  - Data Science
+  - Cybersecurity
 
 <div>
 <a href="https://github.com/Guibpb">
