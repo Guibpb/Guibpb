@@ -1,7 +1,7 @@
 # Hello!
 ## I'm currently studying Computer Science at University Of São Paulo - Brasil (USP).
 My interest areas are:
-  - Operational Systems
+  - Operating Systems
   - Data Science
   - Cybersecurity
 
